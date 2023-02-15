@@ -770,18 +770,6 @@
             $(".page-wrapper").addClass("toggled");
         });
 
-
-    });
-
-    $(function() {
-        let $container = $('#container');
-
-        $container.masonry({
-            isFitWidth: true,
-            columnWidth: 5,
-            animate: true
-        });
-
         const ratio = window.devicePixelRatio || 1;
         const w = screen.width * ratio;
         console.log(w);
@@ -790,13 +778,22 @@
             $(".box").css("width", screen.width - 22 + "px");
             $(".box").css("left", 8 + "px");
 
-            $(".ga-charts").each(function() {
+            $(".ga-charts").each(function () {
                 var id = $(this).attr('_echarts_instance_');
                 window.echarts.getInstanceById(id).resize({
                     width: 353,
                 });
             });
         }
+
+        let $container = $('#container');
+
+        $container.masonry({
+            isFitWidth: true,
+            columnWidth: 5,
+            animate: true
+        });
+
     });
     </script>
 
