@@ -9,8 +9,7 @@
     <title>Scriptboxie</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2559381849307739" crossorigin="anonymous"></script>
+    
     <script src='https://code.jquery.com/jquery-latest.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
@@ -781,30 +780,6 @@
         $("#show-sidebar").click(function() {
             $(".page-wrapper").addClass("toggled");
         });
-
-        const ratio = window.devicePixelRatio || 1;
-        const w = screen.width * ratio;
-        console.log(w);
-        if (mobileCheck()) {
-
-            $(".box").css("width", screen.width - 22 + "px");
-            $(".box").css("left", 8 + "px");
-
-            $(".ga-charts").each(function () {
-                var id = $(this).attr('_echarts_instance_');
-                window.echarts.getInstanceById(id).resize({
-                    width: 353,
-                });
-            });
-        }
-
-        let $container = $('#container');
-
-        // $container.masonry({
-        //     isFitWidth: true,
-        //     columnWidth: 5,
-        //     animate: true
-        // });
 
     });
     </script>
