@@ -21,11 +21,13 @@
     /*box start*/
     .box {
         width: 480px;
+        /*height: 120px;*/
         margin: 5px;
+        background: #ffffff;
         float: left;
         text-align: -webkit-center;
+        -webkit-box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
     }
-
     .box:hover .tut-title {
         visibility: visible;
     }
@@ -639,7 +641,14 @@
             <div id="container" style="margin: 0 auto;">
                 
                 <div id="b4_table" class="grid-item box">
-                    <h4>{{message}}</h4>
+                    <div class="card" style="">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Scriptboxie</h5>
+    <p class="card-text"</p>
+    <a href="https://gemilepus.github.io/scriptboxie/" class="btn btn-primary">more</a>
+  </div>
+</div>
                 </div>
                 <script>
                 var b4_table = Vue.createApp({
