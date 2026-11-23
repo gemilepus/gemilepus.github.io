@@ -105,6 +105,8 @@
                     #readme-content pre { background: #f6f8fa; padding: 1em; border-radius: 6px; overflow-x: auto; }
                     #readme-content a { color: #0969da; text-decoration: none; }
                     #readme-content a:hover { text-decoration: underline; }
+                    /* kofi banner is huge at native size -> cap to badge height */
+                    #readme-content img[src*="kofi"] { max-height: 36px; }
                 </style>
                 <script>
                     (function () {
